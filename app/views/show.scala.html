@@ -1,0 +1,6 @@
+@(jsName: String)(content: Html)
+
+@main(jsName) {
+@content
+<script src="@routes.Assets.at("javascripts/%s.js".format(jsName))"></script>
+}
